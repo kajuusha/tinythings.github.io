@@ -1,0 +1,154 @@
+/* ===== БАЗА ===== */
+* { box-sizing: border-box; }
+
+:root{
+  /* Цвета из методички */
+  --bg: #E6EBE0;      /* фон */
+  --dark: #13262F;    /* тёмный акцент */
+  --brown: #6E5A3D;   /* кнопки/доп. */
+
+  --text: #13262F;
+  --card: rgba(255,255,255,0.55);
+  --border: rgba(19,38,47,0.18);
+}
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+
+  /* В методичке шрифты кастомные, но мы берём web-safe аналоги */
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container{
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* ===== ШАПКА + МЕНЮ ===== */
+.header{
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.logo{
+  margin: 0;
+  font-size: 28px;
+  color: var(--dark);
+
+  /* “логотип” курсивом (похоже на Amoresa по настроению) */
+  font-family: "Brush Script MT", "Comic Sans MS", cursive;
+}
+
+.nav{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav a{
+  text-decoration: none;
+  color: var(--dark);
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.nav a:hover{
+  background: var(--dark);
+  color: var(--bg);
+}
+
+/* ===== HERO (главная картинка) ===== */
+.hero{
+  padding: 18px 0 26px;
+}
+
+.hero-card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.hero-img{
+  height: 260px;
+  background: url("img/hero.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+  padding: 16px;
+}
+
+.h1{
+  margin: 0 0 8px 0;
+  font-size: 30px;
+
+  /* заголовки “серифные” (как Le Jour Serif по идее) */
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.p{
+  margin: 0 0 12px 0;
+  opacity: 0.9;
+}
+
+.btn{
+  display: inline-block;
+  background: var(--brown);
+  color: var(--bg);
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.btn:hover{ opacity: 0.92; }
+
+/* ===== БЛОКИ / КАРТОЧКИ ===== */
+.section{
+  padding: 18px 0 28px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.card{
+  background: rgba(255,255,255,0.45);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.h2{
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.list{
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* ===== ПОДВАЛ ===== */
+.footer{
+  border-top: 1px solid var(--border);
+  padding: 18px 0;
+  opacity: 0.9;
+  font-size: 14px;
+}
