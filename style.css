@@ -1,4 +1,4 @@
-/* ===== БАЗА ===== */
+
 * { box-sizing: border-box; }
 
 :root{
@@ -55,7 +55,7 @@ body{
 
 .nav{
   display: flex;
-  justify-content: space-between; /* левый край / центр / правый край */
+  justify-content: space-between; 
   align-items: center;
   width: min(900px, 92%);
   margin: 0 auto
@@ -178,6 +178,7 @@ body{
   opacity: 0.9;
   font-size: 14px;
 }
+
 
 
 
