@@ -55,9 +55,10 @@ body{
 
 .nav{
   display: flex;
-  gap: 300px;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* левый край / центр / правый край */
+  align-items: center;
+  width: min(900px, 92%);
+  margin: 0 auto
 }
 
 .nav a{
@@ -177,5 +178,6 @@ body{
   opacity: 0.9;
   font-size: 14px;
 }
+
 
 
