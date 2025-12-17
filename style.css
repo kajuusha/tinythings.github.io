@@ -2,8 +2,12 @@
 * { box-sizing: border-box; }
 
 :root{
-  /* Цвета из методички */
-  --bg: #E6EBE0;      /* фон */
+
+  --font-logo: "Monsieur La Doulaise", cursive;
+  --font-heading: "Playfair Display", serif;
+  --font-text: "Merriweather", serif;
+  
+  --bg: #E6E5E0;      /* фон */
   --dark: #13262F;    /* тёмный акцент */
   --brown: #6E5A3D;   /* кнопки/доп. */
 
@@ -152,3 +156,4 @@ body{
   opacity: 0.9;
   font-size: 14px;
 }
+
